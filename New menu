@@ -1,0 +1,36 @@
+/* Main navigation bar styling */
+.navbar {
+    background-color: #fff; /* Change to #000 for black */
+}
+
+/* Top-level menu items */
+.nav-menu > li {
+    position: relative;
+    display: inline-block;
+    background-color: transparent; /* No background color initially */
+}
+
+/* Top-level menu items hover effect */
+.nav-menu > li:hover, .nav-menu > li:focus {
+    background-color: #e9e9e9; /* Light grey on hover, adjust as needed */
+}
+
+/* Dropdown menu styling */
+.dropdown {
+    display: none; /* Hide initially */
+    position: absolute;
+    left: 0; top: 100%;
+    background-color: #fff; /* White background for the dropdown */
+    width: 100%; /* Adjust according to your layout */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.1); /* Optional: adds a slight shadow */
+}
+
+/* Show dropdown on hover */
+.nav-menu > li:hover .dropdown, .nav-menu > li:focus-within .dropdown {
+    display: block;
+}
+
+/* Dropdown item hover effect */
+.dropdown li a:hover {
+    background-color: #f2f2f2; /* Light grey for hovered dropdown item */
+}
